@@ -5,14 +5,16 @@
 
 ## Experience
 - Were there any things that you struggled with?
-  - I need to come up with some content for the blog posts :) but I got an outline laid out that I think I can implement well
+  - Yeah connecting the database proved to be quite difficult for me. I spent a lot of time trying to get the configurations correct.
+  I tried using MySQL since I am mode familiar with it but ultimately switched the SQLite since that was was recommended. 
+
+
 - Were there any parts of this lab that were unclear or poorly specified?
-  - No I think the explanation was straightforward 
+  - I referred back to lab 10 instructions for the Express and Database details
 - Were you able to get the entire project done?
-  - my website design yes
+  - Right now my database is not successfully connected, but I think I', close
 
 ## Known issues or Bugs
-none
+
 
 ## Sources used
-https://www.rawpixel.com/image/587798/forest-leaf-frame
