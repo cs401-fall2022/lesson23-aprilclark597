@@ -12,7 +12,7 @@
 - Were there any parts of this lab that were unclear or poorly specified?
   - I referred back to lab 10 instructions for the Express and Database details
 - Were you able to get the entire project done?
-  - Right now my database is not successfully connected, but I think I', close
+  - Right now my database is not successfully connected, but I think I'm close
 
 ## Known issues or Bugs
 
