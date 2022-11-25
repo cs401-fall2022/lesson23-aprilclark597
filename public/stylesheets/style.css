@@ -1,8 +1,77 @@
 body {
   padding: 50px;
+  color: black;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/leafbg.png");
+}
+
+.page{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
   color: #00B7FF;
+}
+
+.nav{
+  position: fixed;
+  top: 0; 
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul{
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul li a{ 
+  position: relative;
+  float: left;
+  color: green;
+  background-color: white;
+  text-decoration: none;
+  text-size-adjust: large;
+  font-size: large;
+  font-weight: 800;
+}
+
+h1{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  background-color: rgb(211, 255, 208);
+  
+ }
+h2{
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(211, 255, 208);
+
+}
+h3{
+  font-size: 28px;
+  background-color: rgb(211, 255, 208);
+  color: black;
+  text-align: center;
+  text-decoration:dotted
+}
+
+p{
+  background-color: rgb(211, 255, 208);
+  color: black;
+}
+
+img{
+  height: 300px;
+}
+
+.add{
+  background-color: rgb(211, 255, 208);
+  color: black;
 }
