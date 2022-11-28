@@ -71,6 +71,7 @@ Duis convallis est leo, id fermentum sem fermentum et. Maecenas porta vel metus 
             <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer leo neque, ultrices non hendrerit suscipit, vestibulum et nulla. Nulla cursus pulvinar nisi, nec consequat odio pretium et. Maecenas rutrum arcu nibh, sit amet tristique mauris efficitur sed. Curabitur quis eros at odio aliquam pellentesque. Maecenas libero justo, blandit eget lacus nec, pellentesque egestas augue. Donec nec metus sed massa fringilla vulputate vitae vel velit. Nunc ut turpis eu nisi aliquam sodales. Fusce ante urna, lobortis sed porttitor sit amet, convallis vitae mi. Maecenas porta tellus ut dolor placerat efficitur. Sed eget lobortis lorem, id mattis mauris.
             <br><br></p>
         </div>
+        <h3 id="new">NEW ENTRY</h3>
         <div class="add">
         <ul>
             {% for txt in data%}
@@ -78,14 +79,13 @@ Duis convallis est leo, id fermentum sem fermentum et. Maecenas porta vel metus 
             {% endfor%}
         </ul>
         </div>
-
         <hr>
         <div class="add">
         <h2>Add entry</h2>
         <form action="/add" method="POST">
             <div>
-                <label for="blog">New Blog Entry:</label>
-                <input name="blog" id="blog" value="Hi this is my blog text!" />
+                <label for="entry">New Blog Entry:</label>
+                <textarea name="entry" id="entry" value="Enter new"></textarea>
             </div>
             <div>
                 <button>submit entry</button>

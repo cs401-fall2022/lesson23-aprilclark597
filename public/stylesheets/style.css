@@ -46,17 +46,23 @@ h1{
   color: black;
   text-align: center;
   background-color: rgb(211, 255, 208);
-  
+  border-radius: 25px;
+  padding: 20px;
  }
+
 h2{
   font-size: 16px;
   text-align: center;
   background-color: rgb(211, 255, 208);
-
+  border-radius: 25px;
+  padding: 20px;
 }
+
 h3{
   font-size: 28px;
   background-color: rgb(211, 255, 208);
+  border-radius: 25px;
+  padding: 20px;
   color: black;
   text-align: center;
   text-decoration:dotted
@@ -64,6 +70,8 @@ h3{
 
 p{
   background-color: rgb(211, 255, 208);
+  border-radius: 25px;
+  padding: 20px;
   color: black;
 }
 
@@ -73,5 +81,12 @@ img{
 
 .add{
   background-color: rgb(211, 255, 208);
+  border-radius: 25px;
+  padding: 20px;
   color: black;
+}
+
+#entry{
+  height: 150px;
+  width: 300px;
 }
