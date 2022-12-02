@@ -27,8 +27,8 @@ router.get('/', function (req, res, next) {
                      blog_txt text NOT NULL);
                       
                       insert into blog (blog_txt)
-                      values ('Welcome to Happy Houseplants'),
-                             ('When to Water');`,
+                      values ('Winter is Coming... do you really need to move your plants away from the windows? '),
+                      ('Coming Next Week: When to Re-pot');`,
               () => {
                 db.all(`select blog_id, blog_txt from blog`, (err, rows) => {
                   res.render('index', { title: 'HappyHouseplants', data: rows });
@@ -67,6 +67,23 @@ router.post('/delete', (req, res, next) => {
       }
       console.log("deleting " + req.body.blog); 
       db.run("delete from blog where blog_id = ?;", [req.body.blog]);     
+      res.redirect('/');
+    }
+  );
+})
+
+router.post('/update', (req, res, next) => {
+  console.log("Updating blog in table!");
+  var db = new sqlite3.Database('mydb.sqlite3',
+    sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE,
+    (err) => {
+      if (err) {
+        console.log("Getting error " + err);
+        exit(1);
+      }
+      console.log("updating " + req.body.blog);
+      db.run("update blog set (blog_txt) = (?);", [req.body.blog]);
+      //redirect to homepage
       res.redirect('/');
     }
   );
